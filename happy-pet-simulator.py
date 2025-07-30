@@ -1,5 +1,5 @@
 pet_name = "Mochi"
-happiness = 5
+happiness = 0
 
 while True:
     print(f"\nWhat would you like to do with {pet_name}?")
@@ -10,3 +10,9 @@ while True:
 
     choice = input("Choose number between 1-4: ")
 
+    if choice == "1":
+        if happiness < 10:
+            happiness += 1
+            print(f"You fed {pet_name}.")
+        else:
+            print(f"{pet_name} is already full.")
