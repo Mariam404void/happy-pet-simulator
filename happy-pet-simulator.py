@@ -1,28 +1,18 @@
-pet_name = "Mochi"
-happiness = 0
-
 while True:
-    print(f"\nWhat would you like to do with {pet_name}?")
-    print("1. Feed")
-    print("2. Pet")
-    print("3. Check happiness")
-    print("4. Exit")
-
-    choice = input("Choose number between 1-4: ")
+    choice = input("Enter 1 to feed, 2 to pet, 3 to check if happy, 4 to exit: ").strip()
 
     if choice == "1":
-        if happiness < 10:
-            happiness += 1
-            print(f"You fed {pet_name}.")
-        else:
-            print(f"{pet_name} is already full.")
-
+        print("You fed Mochi.")
 
     elif choice == "2":
-        if happiness < 10:
-            happiness += 2
-            if happiness > 10:
-                happiness = 10
-            print(f"You pet {pet_name}.")
-        else:
-            print(f"{pet_name} is already very happy.")
+        print("You pet Mochi.")
+
+    elif choice == "3":
+        print("Mochi is happy!")
+
+    elif choice == "4":
+        print("Goodbye! Mochi will miss you")
+        break
+
+    else:
+        print("Invalid choice.")
