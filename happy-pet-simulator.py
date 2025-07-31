@@ -16,3 +16,22 @@ while True:
             print(f"You fed {pet_name}.")
         else:
             print(f"{pet_name} is already full.")
+
+
+
+    elif choice == "3":
+        if happiness >= 8:
+            mood = "Very happy"
+        elif happiness >= 5:
+            mood = "Doing okay"
+        else:
+            mood = "Feeling a little down"
+
+        print(f"{pet_name}'s happiness: {happiness}/10 — {mood}")
+
+    elif choice == "4":
+        print(f"Goodbye! {pet_name} will miss you.")
+        break
+
+    else:
+        print("Invalid choice. Please try again.")
